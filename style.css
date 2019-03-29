@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+html, body, h3 {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+header{
+  background-color: rgb(51, 51, 51)
+}
+
+
+aside {
+  background-color: rgb(51, 51, 77);
+}
+
+
+header {
+  padding: 2em;
+}
+
+h1, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, .tagline {
+  color: white;
+}
+
+section {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding-bottom: .2em;
+}
+
+.nummer {
+  background-color: #333;
+  color: #FFF;
+  font-size: 3em;
+  width: 1.2em;
+  text-align: right;
+  padding: .2em;
+}
+
+article {
+  padding: 1em;
+}
+
+section img {
+  max-width: 100%;
+  width: 500px;
+}
+
+aside ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+aside h3 {
+  background-color: #333;
+  padding: 2em;
+  color: white;
+}
+
+aside a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 2em;
+}
+
+aside a:hover {
+  background-color: #AAC;
+  color: #FFF;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2em;
+}
+
+@media screen and (min-width: 760px) {
+  .afb {
+    display: block;
+    background-image: url('duurzaam-boodschappen.jpg');
+    background-size: cover;
+    background-position: center center;
+  }
+
+  body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "kop kop"
+      "t1 t2"
+      "t3 t4"
+      "t5 t6"
+      "afb t6"
+      "afb t7"
+      "aside t8"
+      "aside t9"
+      "aside t10"
+      "voet voet";
+  }
+
+  header {
+    grid-area: kop;
+  }
+
+  .besparen {
+    grid-area: t1;
+  }
+
+  .gemiddeld {
+    grid-area: t2;
+  }
+
+  .misschiem {
+    grid-area: t3;
+  }
+
+  .folders {
+    grid-area: t4;
+  }
+
+  .merken {
+    grid-area: t5;
+  }
+
+  .winkels {
+    grid-area: t6;
+  }
+
+  .afb {
+    grid-area: afb;
+  }
+
+  .vers {
+    grid-area: t7;
+  }
+
+  .handel {
+    grid-area: t8;
+  }
+
+  .vriezer {
+    grid-area: t9;
+  }
+
+  .bespaar {
+    grid-area: t10;
+  }
+
+  aside {
+    grid-area: aside;
+  }
+
+  footer {
+    grid-area: voet;
+  }
+
+  .sparen_article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .sparen_article h3 {
+    grid-column: span 2;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+}
+@media screen and (min-width: 1000px) {
+  body {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "kop kop kop"
+      "t1 t2 afb"
+      "t3 t4 afb"
+      "t5 t6 afb"
+      "t7 t8 aside"
+      "t9 t10 aside"
+      "voet voet voet";
+  }
+}
