@@ -161,13 +161,6 @@ footer {
     grid-area: voet;
   }
 
-  .sparen_article {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .sparen_article h3 {
-    grid-column: span 2;
-  }
   footer {
     display: grid;
     grid-template-columns: 1fr auto;
